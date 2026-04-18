@@ -47,3 +47,19 @@ print("result3:", result3)
 
 result4 = give_greet("LEO")
 print("result4:", result4)
+
+
+print("======== Scope ========")
+
+b = 100  # 3- tashqaridan izlaydi
+
+
+def calculate(a):  # 2- parametordan. shundaham topolmasa
+
+    c = a * b  # 1- buyerdan izlaydi
+    print(f"the c value:, {c}")
+
+
+# Call
+
+calculate(5)
