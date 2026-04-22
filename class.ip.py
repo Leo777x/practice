@@ -46,6 +46,11 @@ class Dog(Animal):  # Child
     def protect(self):
         print("Yes, I can protect you! ")
 
+    def make_voice(self):
+        print(f"The {self.name} says {self.sound}")
+
+# agar INHERITENCE qonuniga ko'ra
+
 
 class Cat(Animal):  # Child
     # state
@@ -90,7 +95,6 @@ fish.introduce()
 print("-------------------")
 dog.make_voice()
 fish.make_voice()
-cat.make_voice()
 
 print("------------")
 
@@ -99,3 +103,29 @@ print("Dog:", Dog.description)
 
 print(dog.voice, fish.voice)
 print("status:", dog._status)
+
+print("====== POLIMORPHISM ======== ")
+
+'''
+POLIMORPHISM nima degani? 
+POLI - ko'p dagi
+MORPHISM - shakl degani
+ya'ni bir qancha narsalarnin shakli degani.
+'''
+print("-------")
+# yuqorida hosil qilgan (fish)miz albatta Fish classidan  hosil bo'lgan Object hisoblanadi
+# va (Fish) miz o'z navbatida Animal clasidan hosil bo'lgan hisoblanadi
+# va ohirida hammasi Object degan classga child bo'lganini guvohi bo'lyamiz
+
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+d = isinstance("MIT", object)
+
+result = a & b & c & d
+print(f"the result: {result}")
+
+# fish > animal > object
+data1 = issubclass(Fish, Animal)
+data2 = issubclass(Animal, object )
+print("Data:", data1, data2)
