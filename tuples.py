@@ -67,4 +67,23 @@ def introduce(**kwargs):
 # CALL
 introduce(name="LEO", age=26)
 introduce(name="Shawn", age=39, single=True)
- 
+
+
+def greeting(*args, **kwargs):
+    print("*args >", args)
+    print("**kwargs >", kwargs)
+
+
+# CALL
+greeting("hi", True, 10, name="LEO", age=22)
+
+print("======= ZIP ===========")
+
+tuple1 = (1, 2, 3, 4)
+tuple2 = ("a", "b", "c")
+
+
+zipped = zip(tuple1, tuple2)
+print("zipped:", zipped)
+result = list(zipped)
+print(f"the result: {result}")
