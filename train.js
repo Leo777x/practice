@@ -1,5 +1,25 @@
+/*⭐️D-TASK (NodeJS)
+Shunday function tuzingki unga integerlardan iborat
+ array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
+*/
+// 🌟 MASALANING YECHIMI:
+ function getHighestIndex(arr) {
+  let max = arr[0];
+  let index = 0;
 
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+      index = i;
+    }
+  }
+  return index;
+}
 
+const result = getHighestIndex([5, 21, 12, 21, 8]);
+console.log("result:", result)
+ 
  /* ⭐️C-TASK (NodeJS)
 Shunday function tuzing, u 2ta string parametr ega bolsin,
 hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
@@ -7,25 +27,25 @@ MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 */
 // 🌟 MASALANING YECHIMI:
 
-function checkContent(a, b) {
-  if (a.length !== b.length) return false;
+// function checkContent(a, b) {
+//   if (a.length !== b.length) return false;
 
-  let count = {};
+//   let count = {};
 
-  for (let char of a) {
-    count[char] = (count[char] || 0) + 1;
-  }
+//   for (let char of a) {
+//     count[char] = (count[char] || 0) + 1;
+//   }
 
-  for (let char of b) {
-    if (!count[char]) return false;
-    count[char]--;
-  }
+//   for (let char of b) {
+//     if (!count[char]) return false;
+//     count[char]--;
+//   }
 
-  return true;
-}
+//   return true;
+// }
 
-const result = checkContent("mitgroup", "gmtiprou");
-console.log("result:", result)
+// const result = checkContent("mitgroup", "gmtiprou");
+// console.log("result:", result)
 
 /* ⭐️ B-TASK (Nodejs)
 
