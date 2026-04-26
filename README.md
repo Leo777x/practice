@@ -21,6 +21,7 @@ git commit -m "feat: Initial setup"
 git remote add origin https://github_addres
 git push origin master
 git pull origin master
+git commit --amend (wq)- yozib chiqib ket (ohirgi yozgan mantiqni to'girlab yozmoqchi bo'lsam)
 
 ```
 
