@@ -3,6 +3,7 @@
 (2) Package Manager & External Package
 (3) Debugging
 '''
+from PIL import image
 import turtle
 print("======= Python Packages & Core Packages ========")
 
@@ -52,3 +53,4 @@ with Image.open("material/IMG_1215.JPG") as img_obj:
      resized_img = img_obj.resize((200, 200))
      resized_img.show()
      resized_img.save("material/sample.png")
+

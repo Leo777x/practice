@@ -42,3 +42,13 @@ git commit --amend (wq)- yozib chiqib ket (ohirgi yozgan mantiqni to'girlab yozm
 - Packages & debugging
 
 python3 debugging.py
+
+## pip commands:
+
+```
+pip list >to'liq ro'yxatni ko'rsatadi
+pip install pillow
+pip show pillow > packagemizni o'rnatilgan manzilini ko'rmoqchi bolsak
+pip freeze > ma'lumotlarni ko'rsatib beradi
+pip freeze > requirements.txt joylashda 
+```
