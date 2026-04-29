@@ -17,12 +17,12 @@ va Pythoda package larimiz 3 hil turda bo'lar ekan
 # Core Packages >  https://docs.python.org/3/liberary
 
 
-# t = turtle.Turtle()
-# t.shape("turtle")
-# t.speed(3)
-# t.circle(200)
+t = turtle.Turtle()
+t.shape("turtle")
+t.speed(3)
+t.circle(200)
 
-# turtle.done()
+turtle.done()
 
 print("--------------")
 
@@ -50,7 +50,20 @@ print("======= Package Manager & External Package ========")
 # External Package > https://pypi.org/
 
 with Image.open("material/IMG_1215.JPG") as img_obj:
-     resized_img = img_obj.resize((200, 200))
-     resized_img.show()
-     resized_img.save("material/sample.png")
+    resized_img = img_obj.resize((200, 200))
+    resized_img.show()
+    resized_img.save("material/sample.png")
 
+print("======= Debugging ========")
+
+
+def get_summary(*args):  # defina
+    total_amount = 0
+    for a in args:
+        total_amount += a
+        return total_amount  # find the byg via debugging
+
+
+test = 100
+result = get_summary(1, 2, 3, 4, 5)  # call
+print("result:", result)

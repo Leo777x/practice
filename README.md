@@ -52,3 +52,4 @@ pip show pillow > packagemizni o'rnatilgan manzilini ko'rmoqchi bolsak
 pip freeze > ma'lumotlarni ko'rsatib beradi
 pip freeze > requirements.txt joylashda 
 ```
+
