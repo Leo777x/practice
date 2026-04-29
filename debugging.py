@@ -39,3 +39,16 @@ with open("material/message.txt", "r") as your_file:
     print("your_content:", your_content)
 
 print("DONE")
+
+print("======= Package Manager & External Package ========")
+# package manager (pip)
+# Pythonda > pip pipenv
+# NodeJs > npm yarm
+# PHP > Composeer
+# macos brew
+# External Package > https://pypi.org/
+
+with Image.open("material/IMG_1215.JPG") as img_obj:
+     resized_img = img_obj.resize((200, 200))
+     resized_img.show()
+     resized_img.save("material/sample.png")
