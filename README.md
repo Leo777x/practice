@@ -39,4 +39,6 @@ git commit --amend (wq)- yozib chiqib ket (ohirgi yozgan mantiqni to'girlab yozm
 - List
 - Array
 - Comprehension
-- debugging
+- Packages & debugging
+
+python3 debugging.py
