@@ -18,7 +18,7 @@ function findDoublers(str) {
   return false;
 }
 
-const result = findDoublers("hello")); // true / false
+const result = findDoublers("hello"); // true / false
 console.log("result:", result)
 
 

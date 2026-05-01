@@ -3,7 +3,7 @@
 (2) Package Manager & External Package
 (3) Debugging
 '''
-from PIL import image
+# from PIL import image
 import turtle
 print("======= Python Packages & Core Packages ========")
 
@@ -24,46 +24,46 @@ t.circle(200)
 
 turtle.done()
 
-print("--------------")
+# print("--------------")
 
-my_file = open("material/message.txt", "r")
-try:
-    content = my_file.read()
-    print("content:", content)
-finally:
-    my_file.close()
+# my_file = open("material/message.txt", "r")
+# try:
+#     content = my_file.read()
+#     print("content:", content)
+# finally:
+#     my_file.close()
 
-# with
+# # with
 
-with open("material/message.txt", "r") as your_file:
-    your_content = your_file.read()
-    print("your_content:", your_content)
+# with open("material/message.txt", "r") as your_file:
+#     your_content = your_file.read()
+#     print("your_content:", your_content)
 
-print("DONE")
+# print("DONE")
 
-print("======= Package Manager & External Package ========")
-# package manager (pip)
-# Pythonda > pip pipenv
-# NodeJs > npm yarm
-# PHP > Composeer
-# macos brew
-# External Package > https://pypi.org/
+# print("======= Package Manager & External Package ========")
+# # package manager (pip)
+# # Pythonda > pip pipenv
+# # NodeJs > npm yarm
+# # PHP > Composeer
+# # macos brew
+# # External Package > https://pypi.org/
 
-with Image.open("material/IMG_1215.JPG") as img_obj:
-    resized_img = img_obj.resize((200, 200))
-    resized_img.show()
-    resized_img.save("material/sample.png")
+# with Image.open("material/IMG_1215.JPG") as img_obj:
+#     resized_img = img_obj.resize((200, 200))
+#     resized_img.show()
+#     resized_img.save("material/sample.png")
 
-print("======= Debugging ========")
-
-
-def get_summary(*args):  # defina
-    total_amount = 0
-    for a in args:
-        total_amount += a
-        return total_amount  # find the byg via debugging
+# print("======= Debugging ========")
 
 
-test = 100
-result = get_summary(1, 2, 3, 4, 5)  # call
-print("result:", result)
+# def get_summary(*args):  # defina
+#     total_amount = 0
+#     for a in args:
+#         total_amount += a
+#         return total_amount  # find the byg via debugging
+
+
+# test = 100
+# result = get_summary(1, 2, 3, 4, 5)  # call
+# print("result:", result)
