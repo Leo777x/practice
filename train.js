@@ -6,15 +6,15 @@ MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
 
 // 🌟 MASALANING YECHIMI:
 
-function reverseSentence(sentence) {
-    return sentence
-        .split(" ")
-        .map(word => word.split("").reverse().join(""))
-        .join(" ");
-}
+// function reverseSentence(sentence) {
+//     return sentence
+//         .split(" ")
+//         .map(word => word.split("").reverse().join(""))
+//         .join(" ");
+// }
 
-const result = reverseSentence("we like coding!");
-console.log("result:", result)
+// const result = reverseSentence("we like coding!");
+// console.log("result:", result)
 
 
 /* J-TASK (NodeJS)

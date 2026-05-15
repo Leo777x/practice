@@ -1,3 +1,21 @@
+'''🌟M-TASK (PYTHON)
+
+Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham, 
+orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin.
+MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return False;
+'''
+# 🌟 MASALANING YECHIMI:
+
+
+def palindrom_check(word):
+    return word == word[::-1]
+
+
+# Test
+print(palindrom_check("dad"))   # True
+print(palindrom_check("son"))   # False
+
+
 '''⭐️I-TASK (PYTHON)
 
 Shunday function tuzing, unga string argument pass bolsin. Function ushbu agrumentdagi digitlarni yangi stringda return qilsin
@@ -6,16 +24,16 @@ MASALAN: get_digits("m14i1t") return qiladi "141"
 # 🌟 MASALANING YECHIMI:
 
 
-def get_digits(text):
-    result = ""
-    for char in text:
-        if char.isdigit():
-            result += char
+# def get_digits(text):
+#     result = ""
+#     for char in text:
+#         if char.isdigit():
+#             result += char
 
-    return result
+#     return result
 
 
-print(get_digits("m14i1t"))
+# print(get_digits("m14i1t"))
 
 
 '''⭐️G-TASK (PYTHON)
