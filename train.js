@@ -1,3 +1,26 @@
+/*⭐️N-TASK (NodeJS)
+
+Shunday function yozing, u raqamlardan tashkil topgan array qabul qilsin va array ichidagi har bir raqam uchun raqamni ozi va hamda osha raqamni kvadratidan tashkil topgan object hosil qilib, hosil bolgan objectlarni array ichida qaytarsin.
+MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, {number: 2, square: 4}, {number: 3, square: 9}];
+*/
+
+// 🌟 MASALANING YECHIMI:
+
+function getSquareNumbers(arr) {
+    return arr.map((num) => {
+        return {
+            number: num,
+            square: num * num
+        };
+    });
+}
+
+
+const result = getSquareNumbers([1, 2, 3]);
+console.log("result:", result)
+
+
+
 /*L-TASK (NodeJS)
 
 Shunday function yozing, u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
